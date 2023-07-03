@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Where in the World</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer ></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" ></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="shortcut icon" href="design/icons8-earth-globe-color-96.png" type="image/x-icon">
+</head>
+<body>
+    <nav>
+        <h1>Where in the World </h1>
+    
+        <button class="dark-btn" onclick="darkmode()"><img src="design/moon.svg" alt="">Dark Mode</button>
+    </nav>
+    <div class="bandeau">Coded by <strong>MarMoud9</strong></div>
+    <div class="sort">
+        <div class="search-bar">
+            <ion-icon class="icon" name="search-outline"></ion-icon>
+            <input class="input-search" type="text" placeholder="Search for a country...">
+        </div>
+        
+        <div class="dropdown">
+            <button class="dropdown-button" id="filter">Filter by Region<ion-icon name="chevron-forward-outline"></ion-icon></button>
+            <div class="dropdown-content">
+                <button class="dropdown-content-button" onclick="filter('europe')">Europe</button>
+                <button class="dropdown-content-button" onclick="filter('asia')">Asia</button>
+                <button class="dropdown-content-button" onclick="filter('america')">America</button>
+                <button class="dropdown-content-button" onclick="filter('africa')">Africa</button>
+                <button class="dropdown-content-button" onclick="filter('oceania')">Oceania</button>
+            </div>
+        </div>
+    </div>
+    <main>
+    </main>
+    <div class="detail">
+        <div class="detail-country">
+            <button class="back"onclick="back()"><ion-icon name="arrow-back-outline"></ion-icon> Back</button>
+            <div class="detail-img"><img src="" alt=""></div>
+            <div class="detail-txt">
+                <h1>Belgium</h1>
+                <div class="infos">
+                    <p>Native name : <span></span> </p>
+                    <p>Population : <span></span></p>
+                    <p>Region : <span></span></p>
+                    <p>Sub Region : <span></span></p>
+                    <p>Capital : <span></span></p>
+                    <p>Top Level Domain : <span></span></p>
+                    <p>Currencies : <span></span></p>
+                    <p>Languages : <span></span></p>
+                </div>
+                <div class="border">
+                    <p>Border Countries :</p>
+                    <div class="content"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
